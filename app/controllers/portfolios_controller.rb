@@ -24,14 +24,18 @@ class PortfoliosController < ApplicationController
   	end
 
   	def update
-  	@portfolio = Portfolio.find(params[:id])
-  	
-    respond_to do |format|
-      if @portfolio.update(params.require(:portfolio).permit(:title,:subtitle,:body))
-        format.html { redirect_to portfolios_path, notice: "Portfolio was successfully updated." }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-      end
+	  	@portfolio = Portfolio.find(params[:id])
+
+	    respond_to do |format|
+	      if @portfolio.update(params.require(:portfolio).permit(:title,:subtitle,:body))
+	        format.html { redirect_to portfolios_path, notice: "Portfolio was successfully updated." }
+	      else
+	        format.html { render :edit, status: :unprocessable_entity }
+	      end
+	    end
+	end
+    
+    def show
+    	@portfolio = Portfolio.find(params[:id])
     end
-  end
 end
