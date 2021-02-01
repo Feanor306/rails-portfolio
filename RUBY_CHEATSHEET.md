@@ -33,6 +33,13 @@
 ### New Rails APP
 > rails new TestEnvApp -T -d postgresql
 
+### Check active routes
+> rails routes
+
+### Start dev server
+> rails s
+
+## Database
 ### Edit database file to add host, username, password
 > gedit config/database.yml
 
@@ -42,11 +49,8 @@
 ### Migrate DB
 > rails db:migrate
 
-### Start dev server
-> rails s
-
-### Check active routes
-> rails routes
+### Reset DB
+> rails db:setup
 
 ### Generators  
 #### Generate scaffold
