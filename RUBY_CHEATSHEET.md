@@ -18,6 +18,9 @@
 > gem install nokogiri
 > gem install rails
 
+### Install gem dependencies (if you edit gemfile)
+> bundle install
+
 ### Install postgresql and create user
 > sudo apt-get install postgresql postgresql-contrib libpq-dev
 > sudo -u postgres createuser -s railsdevuser
