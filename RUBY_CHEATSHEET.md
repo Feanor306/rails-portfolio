@@ -55,15 +55,18 @@
 ### Reset DB
 > rails db:setup
 
-### Generators  
-#### Generate scaffold
+## Generators  
+### Generate scaffold
 > rails g scaffold Guide title:string
 
-#### Generate model
+### Generate model
 > rails g model Skill title:string percent_time:integer
 
-#### Generate controller
+### Generate controller
 > rails g controller Pages home about contact
 
-#### Generate resource
+### Generate resource
 > rails g resource Portfolio title:string subtitle:string body:text main_image:text thumb_image:text
+
+### Generate migration (add field to DB table)
+> rails g migration add_post_status_to_blogs status:integer
