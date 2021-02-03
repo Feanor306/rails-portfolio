@@ -18,5 +18,7 @@ class Portfolio < ApplicationRecord
 		self.thumb_image ||= Placeholder.image_generator(height: '350', width: '200')
 	end
 
+	# one-to-many relationship
 	has_many :technologies
+	accepts_nested_attributes_for :technologies, reject_if: lambda { |attrs| attrs['name'].blank? }
 end
