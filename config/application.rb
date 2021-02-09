@@ -24,6 +24,9 @@ module DevcampPortfolio
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    # Permit all query parameters
+    # config.action_controller.permit_all_parameters = true
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
