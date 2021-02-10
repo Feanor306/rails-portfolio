@@ -8,4 +8,11 @@ module ApplicationHelper
       		(link_to "Login", new_user_session_path )
     	end
 	end
+
+	def source_helper(layout_name)
+		if session[:source]
+			greeting = "Thank you for coming to us from #{session[:source]}, your layout is #{layout_name}"
+      		content_tag(:p, greeting, class: "source-greeting")
+    	end 
+	end
 end
