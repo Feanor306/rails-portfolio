@@ -4,10 +4,12 @@ class BlogsController < ApplicationController
   # GET /blogs or /blogs.json
   def index
     @blogs = Blog.all
+    @page_title = "Portfolio Blog | Feanor306"
   end
 
   # GET /blogs/1 or /blogs/1.json
   def show
+    @page_title = @blog.title
   end
 
   # GET /blogs/new
