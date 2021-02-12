@@ -57,4 +57,8 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 5.0.0.beta1'
 
 # Custom gemfile, imported from github
+# Can ommit github link if gem is pushed to rubygems.org
 gem 'devcamp_view_tool_feanor', git: 'https://github.com/Feanor306/devcamp_view_tool_feanor'
+
+# Authorization gate gem
+gem 'petergate', '~> 2.0', '>= 2.0.1'
