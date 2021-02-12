@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Feanor306/devcamp_view_tool_feanor
+  revision: ce978a94f0c9a4b21b9c9e2b5f24cd451b31bf81
+  specs:
+    devcamp_view_tool_feanor (0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -216,6 +222,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   bootstrap (~> 5.0.0.beta1)
   byebug
+  devcamp_view_tool_feanor!
   devise (~> 4.7, >= 4.7.3)
   friendly_id (~> 5.4.0)
   jbuilder (~> 2.7)

@@ -55,3 +55,6 @@ gem 'jquery-rails'
 
 # Bootstrap
 gem 'bootstrap', '~> 5.0.0.beta1'
+
+# Custom gemfile, imported from github
+gem 'devcamp_view_tool_feanor', git: 'https://github.com/Feanor306/devcamp_view_tool_feanor'

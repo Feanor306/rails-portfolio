@@ -15,4 +15,9 @@ module ApplicationHelper
       		content_tag(:p, greeting, class: "source-greeting")
     	end 
 	end
+
+  def copyright_generator
+    DevcampViewToolFeanor::Renderer.copyright 'Feanor306', 'All rights reserved'
+  end
+
 end
