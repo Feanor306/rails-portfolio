@@ -55,3 +55,22 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+/*
+ * Custom styles
+ */
+.auth-links a {
+    color:black;
+    font-weight:bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    border: 1px solid black;
+
+    &:hover {
+        color:white;
+        background-color: black;
+        border: 1px solid black;
+    }
+}
