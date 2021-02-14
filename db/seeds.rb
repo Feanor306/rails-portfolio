@@ -56,3 +56,10 @@ puts "9 portfolios created"
 end
 
 puts "3 technologies created"
+
+1.times do |user|
+	User.create!(
+		
+	)
+end
+puts "admin user created"
