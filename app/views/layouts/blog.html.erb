@@ -16,21 +16,7 @@
   <body>
     <!-- HEADER BEGIN -->
     <header class="blog-header py-3">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Feanor306 Blog</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarRight">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <%= render "shared/blog_nav" %>
     </header>
     <!-- HEADER END -->
 
@@ -38,8 +24,6 @@
       <div class="row">
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
-
-        <%= login_helper %>
 
         <%= yield %>
 
@@ -79,16 +63,16 @@
         </div>
         <!-- SIDEBAR END -->
 
-        <%= render "shared/nav", location: 'bottom' %>
-
         <%= source_helper("blog") %>
 
+        <!-- FOOTER START -->
         <footer class="blog-footer">
           <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
           <p>
             <a href="#">Back to top</a>
           </p>
         </footer>
+        <!-- FOOTER END -->
     </main>
   </body>
 </html>
