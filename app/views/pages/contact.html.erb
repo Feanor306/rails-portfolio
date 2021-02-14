@@ -1,5 +1,17 @@
-<h1>Pages#contact</h1>
-<p><%= number_to_phone "555555555" %></p>
-<p><%= number_to_currency "2000" %></p>
-<p><%= number_to_percentage "80.4" %></p>
-<p><%= number_with_delimiter "123456789" %></p>
+<h1>Contact</h1>
+
+<hr>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Address</h3>
+        <p>Njalsgade 21G, 5.fl, 2300 Copenhagen</p>
+        <p>Phone</p>
+        <p><%= number_to_phone "99999999" %></p>
+        <p>Email</p>
+        <p><a href="mailto:test@test.com">test@test.com</a></p>
+    </div>
+    <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.3092917775243!2d12.57845781566288!3d55.66622158053027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652536a79ceacab%3A0x11b0e247f3d3995a!2sVivino!5e0!3m2!1sda!2sdk!4v1613307158523!5m2!1sda!2sdk" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
