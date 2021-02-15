@@ -15,7 +15,26 @@
 
   <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+      <!-- image background -->
+      <!-- file must exist in assets and referenced in css id 
       <div id="background"></div>
+      -->
+      
+      <!-- VIDEO BACKGROUND -->
+      <!-- file must exist in assets -->
+      <%
+=begin%>
+ <%= video_tag(
+        'some_video.mp4',
+        id: 'background',
+        autoplay: true,
+        loop: true,
+        muted: true,
+        poster: 'background-1080p.jpg'
+      ) %> 
+<%
+=end%>
 
       <%= render "shared/application_nav" %>
 
