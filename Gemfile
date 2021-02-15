@@ -71,3 +71,13 @@ gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 # JQuery UI
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+# Image uploads
+gem 'carrierwave', '~> 2.1', '>= 2.1.1'
+gem 'carrierwave-aws', '~> 1.5'
+
+# Image minifier
+gem 'mini_magick', '~> 4.11'
+
+# Dotenv?
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
