@@ -31,7 +31,8 @@ puts "5 skills created"
 		subtitle: "Ruby on rails",
 		body: "This is a long description of a something that happened. We are going to explain all of the details and have a lot of colorful words that will allow you to see the whole experience as a unit. The verbose explanation may seem unnecessary but it will allow us to seee how a long text looks inside our program and thus it is quite useful. We can make the text even longer by writing another sentence that will talk about our perceptions, feelings and experiences. Let us conclude this text by saying how important it was to write.",
 		main_image: "https://via.placeholder.com/600x400",
-		thumb_image: "https://via.placeholder.com/350x200"
+		thumb_image: "https://via.placeholder.com/350x200",
+		position: portfolio
 	)
 end
 
@@ -41,8 +42,7 @@ end
 		subtitle: "Angular",
 		body: "This is a long description of a something that happened. We are going to explain all of the details and have a lot of colorful words that will allow you to see the whole experience as a unit. The verbose explanation may seem unnecessary but it will allow us to seee how a long text looks inside our program and thus it is quite useful. We can make the text even longer by writing another sentence that will talk about our perceptions, feelings and experiences. Let us conclude this text by saying how important it was to write.",
 		main_image: "https://via.placeholder.com/600x400",
-		thumb_image: "https://via.placeholder.com/350x200",
-		position: portfolio
+		thumb_image: "https://via.placeholder.com/350x200"
 	)
 end
 

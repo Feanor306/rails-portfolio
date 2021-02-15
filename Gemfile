@@ -68,3 +68,6 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.7'
 
 # Pagination gem
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
+
+# JQuery UI
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
