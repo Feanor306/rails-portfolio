@@ -4,7 +4,8 @@
             <%= link_to "Create new portfolio", new_portfolio_path, class: "btn btn-primary mb-3" %>
         <% end %>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 sortable">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 
+            <%= "sortable" if logged_in?(:site_admin) %>">
             <%= render @portfolios %>
         </div>
     </div>

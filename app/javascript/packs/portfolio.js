@@ -17,5 +17,5 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-import "lib/html.sortable"
-import "custom/portfolios"
+//import "lib/html.sortable"
+//import "custom/portfolios"
