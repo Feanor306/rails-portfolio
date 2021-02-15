@@ -62,3 +62,9 @@ gem 'devcamp_view_tool_feanor', git: 'https://github.com/Feanor306/devcamp_view_
 
 # Authorization gate gem
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+
+# Font awesome
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.7'
+
+# Pagination gem
+gem 'kaminari', '~> 1.2', '>= 1.2.1'

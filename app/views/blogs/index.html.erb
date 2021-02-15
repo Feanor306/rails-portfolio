@@ -1,11 +1,11 @@
 <div class="col-md-8">
-  <p id="notice"><%= notice %></p>
+  <% if logged_in?(:site_admin) %>
+    <div class="mb-3 mt-3">
+      <%= link_to 'New Blog', new_blog_path, class: "btn btn-primary" %>
+    </div>
+  <% end %>
 
   <%= render @blogs %>
 
-  <nav class="blog-pagination" aria-label="Pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-  </nav>
-  <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+  <%= paginate @blogs %>
 </div>

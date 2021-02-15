@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 @import "bootstrap";
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -107,16 +108,15 @@ border-top: .05rem solid #e5e5e5;
 .blog-footer p:last-child {
 margin-bottom: 0;
 }
-  
 
 /* 
 *   CUSTOM STYLES
 */
-
 .blog-header {
     width: 60rem;
     margin: 0 auto;
 }
 
-#navbarRight{
+.social-links li {
+    font-size: 2.5rem;
 }

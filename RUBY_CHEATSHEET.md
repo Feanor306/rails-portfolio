@@ -70,3 +70,8 @@
 
 ### Generate migration (add field to DB table)
 > rails g migration add_post_status_to_blogs status:integer
+
+### Generate pagination
+**requires kaminari gem**
+https://github.com/kaminari/kaminari
+rails g kaminari:views {theme}
