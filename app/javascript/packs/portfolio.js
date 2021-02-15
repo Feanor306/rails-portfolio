@@ -11,7 +11,11 @@ import "channels"
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require jquery-ui
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import "lib/html.sortable"
+import "custom/portfolios"
