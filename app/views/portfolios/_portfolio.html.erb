@@ -1,6 +1,37 @@
-<p><%= link_to portfolio.title, portfolio_show_path(portfolio) %></p>
-<p><%= portfolio.subtitle %></p>
-<p><%= portfolio.body %></p>
-<p><%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil? %></p>
-<%= link_to "Edit", edit_portfolio_path(portfolio) if logged_in?(:site_admin) %>
-<%= link_to 'Delete', portfolio_path(portfolio), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+<div class="col">
+    <div class="card shadow-sm">
+        <%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil? %>
+        <!--
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" 
+            xmlns="<%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil? %>" role="img" 
+            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" 
+            focusable="false">
+            <title><%= portfolio.title %></title>
+            <rect width="100%" height="100%" fill="#55595c"/>
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                <%= portfolio.title %>
+            </text>
+        </svg>
+        -->
+        <div class="card-body">
+            <p class="card-title"><%= link_to portfolio.title, portfolio_show_path(portfolio) %></p>
+            <p class="card-text"><%= portfolio.subtitle %></p>
+            <p class="card-text"><%= portfolio.body %></p>
+            
+            <% if logged_in?(:site_admin) %>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <%= link_to "Edit", 
+                            edit_portfolio_path(portfolio), 
+                            class: "btn btn-sm btn-outline-secondary" %>
+                        <%= link_to 'Delete', 
+                            portfolio_path(portfolio), 
+                            method: :delete, 
+                            data: { confirm: 'Are you sure?' }, 
+                            class: "btn btn-sm btn-outline-secondary" %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,11 @@
-<h1>Portfolio items</h1>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <% if logged_in?(:site_admin) %>
+            <%= link_to "Create new portfolio", new_portfolio_path, class: "btn btn-primary mb-3" %>
+        <% end %>
 
-<%= link_to "Create new portfolio", new_portfolio_path if logged_in?(:site_admin) %>
-
-<%= render @portfolios %>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <%= render @portfolios %>
+        </div>
+    </div>
+</div>
