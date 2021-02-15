@@ -7,6 +7,10 @@ class Portfolio < ApplicationRecord
 		where(subtitle: "Angular")
 	end
 
+	def self.by_position
+		order("position ASC")
+	end
+
 	scope :ruby_on_rails_portfolio, -> { where(subtitle: "Ruby on rails")}
 
 	# Default value field initializer
