@@ -1,14 +1,14 @@
-<%= form_with(model: @portfolio) do |form| %>
+<%= form_with(model: @portfolio) do |f| %>
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <%= form.label :title %>
-        <%= form.text_field :title, class: "form-control" %>
+        <%= f.label :title %>
+        <%= f.text_field :title, class: "form-control" %>
       </div>
 
       <div class="form-group">
-        <%= form.label :subtitle %>
-        <%= form.text_field :subtitle, class: "form-control" %>
+        <%= f.label :subtitle %>
+        <%= f.text_field :subtitle, class: "form-control" %>
       </div>
 
       <!-- ALT STYLE FOR IMAGE UPLOAD (style as button) -->
@@ -23,19 +23,19 @@
 =end%>
 
       <div class="form-group">
-        <%= form.label :main_image %>
-        <%= form.file_field :main_image, class: "form-control" %>
+        <%= f.label :main_image %>
+        <%= f.file_field :main_image, class: "form-control" %>
       </div> 
 
       <div class="form-group">
-        <%= form.label :thumb_image %>
-        <%= form.file_field :thumb_image, class: "form-control" %>
+        <%= f.label :thumb_image %>
+        <%= f.file_field :thumb_image, class: "form-control" %>
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        <%= form.label :body %>
-        <%= form.text_area :body, class: "form-control", rows: 13 %>
+        <%= f.label :body %>
+        <%= f.text_area :body, class: "form-control", rows: 13 %>
       </div>
     </div>
 
@@ -43,17 +43,18 @@
 
     <div class="col-md-12">
       <h2>Technologies used</h2>
-      <div>
-        <%= form.fields_for :technologies do |technology_form| %>
-          <div class="form-group">
-            <%= technology_form.label :name %>
-            <%= technology_form.text_field :name, class: "form-control" %>
-          </div>
+      <div id="technologies">
+        <%= f.fields_for :technologies do |technology| %>
+          <%= render 'technology_fields', f: technology %>
         <% end %>
+
+        <div>
+          <%= link_to_add_association 'Add Technology', f, :technologies %>
+        </div>
       </div>
 
       <div class="form-group mt-3">
-        <%= form.submit "Submit", class: "btn btn-primary" %>
+        <%= f.submit "Submit", class: "btn btn-primary" %>
       </div>
     </div>
   </div>

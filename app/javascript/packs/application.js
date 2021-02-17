@@ -12,6 +12,9 @@ import "channels"
 //= require popper
 //= require bootstrap-sprockets
 
+require("jquery")
+require("@nathanvda/cocoon")
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

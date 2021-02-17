@@ -81,3 +81,6 @@ gem 'mini_magick', '~> 4.11'
 
 # Dotenv?
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
+
+# Dynamic Forms with jQuery
+gem 'cocoon', '~> 1.2', '>= 1.2.15'
