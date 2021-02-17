@@ -106,3 +106,16 @@ body {
 .app-footer {
   color:white;
 }
+
+.tech-news{
+  color:black;
+  margin: 1rem;
+}
+
+.tech-news > .card {
+  padding: 1rem;
+}
+
+.tech-news a {
+  color:green;
+}
