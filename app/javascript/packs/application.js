@@ -11,6 +11,7 @@ import "channels"
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require gritter
 
 require("jquery")
 require("@nathanvda/cocoon")

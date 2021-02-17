@@ -84,3 +84,6 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 
 # Dynamic Forms with jQuery
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
+
+# JS notifications
+gem 'gritter', '~> 1.2'

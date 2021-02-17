@@ -1,6 +1,11 @@
 <%= form_with(model: blog) do |form| %>
   <% if blog.errors.any? %>
-    <div id="error_explanation">
+    <% blog.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, :title => "ERROR", sticky: false) %>
+    <% end %>
+    <%
+=begin%>
+ <div id="error_explanation">
       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
 
       <ul>
@@ -8,7 +13,9 @@
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
-    </div>
+    </div> 
+<%
+=end%>
   <% end %>
 
   <div class="form-group mt-2">
