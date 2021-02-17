@@ -3,11 +3,13 @@
     <%= @blog.title %>
   </h2>
 
+  <p class="text-muted">
+    <%= @blog.topic.title %>
+  </p>
+
   <% if logged_in?(:site_admin) %>
     <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" %>
   <% end %>
-
-  <p id="notice"><%= notice %></p>
 
   <p>
     <%= @blog.body %>
