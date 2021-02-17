@@ -2,8 +2,11 @@
   <% if logged_in?(:site_admin) %>
     <div class="mb-3 mt-3">
       <%= link_to 'New Blog', new_blog_path, class: "btn btn-primary" %>
+      <%= link_to 'Topics', topics_path, class: "btn btn-primary" %>
     </div>
   <% end %>
+
+  <%= paginate @blogs %>
 
   <%= render @blogs %>
 
