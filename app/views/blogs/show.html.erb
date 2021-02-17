@@ -3,7 +3,9 @@
     <%= @blog.title %>
   </h2>
 
-  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+  <% if logged_in?(:site_admin) %>
+    <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" %>
+  <% end %>
 
   <p id="notice"><%= notice %></p>
 
@@ -11,5 +13,24 @@
     <%= @blog.body %>
   </p>
 
-  <%= link_to 'Back', blogs_path %>
+  <%= link_to 'Back', blogs_path, class: "btn btn-secondary" %>
+
+  <hr>
+
+  <!-- COMMENT FORM -->
+  <% unless current_user.is_a? GuestUser %>
+    <%= form_for @comment, url: '#' do |f| %>
+      <div class="form-group">
+        <%= f.label :content %>
+        <%= f.text_area :content, class: "form-control", rows: 5 %>
+      </div>
+
+      <div class="form-group mt-3">
+        <%= f.submit 'Post Comment', class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <!-- LIST COMMENTS -->
+  <%= render @blog.comments %>
 </div>

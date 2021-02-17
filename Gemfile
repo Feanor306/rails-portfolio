@@ -90,3 +90,6 @@ gem 'gritter', '~> 1.2'
 
 # Twitter API
 gem 'twitter', '~> 7.0'
+
+# Redis
+# gem 'redis', '~> 4.2', '>= 4.2.5'
