@@ -10,6 +10,13 @@
     </div>
 
     <div class="p-4">
+        <h4>Topics</h4>
+        <% @sidebar_topics.each do |topic| %>
+            <p><%= link_to topic.title, topic_path(topic) %></p>
+        <% end %>
+    </div>
+
+    <div class="p-4">
         <h4>
             Find me on:
         </h4>
