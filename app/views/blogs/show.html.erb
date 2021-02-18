@@ -12,7 +12,7 @@
   <% end %>
 
   <p>
-    <%= @blog.body %>
+    <%= markdown @blog.body %>
   </p>
 
   <%= link_to 'Back', blogs_path, class: "btn btn-secondary" %>

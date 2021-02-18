@@ -93,3 +93,9 @@ gem 'twitter', '~> 7.0'
 
 # Redis
 # gem 'redis', '~> 4.2', '>= 4.2.5'
+
+# Markdown HTML parser
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
+
+# Syntax highlighting for selected languages
+gem 'coderay', '~> 1.1', '>= 1.1.3'
